@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 16px 32px;
+    box-sizing: border-box;
+}
+
+.mi-logo {
+    display: flex;
+    align-items: center;
+}
+
+.mi-logo p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+    margin-left: 10px;
+}
+
+.enlaces-container {
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces-container a {
+    text-decoration: none;
+    color: #464646;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.enlaces-container a:nth-child(6) {
+    font-weight: 700;
+}
+
+.seccion1-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    padding: 0 10%;
+    background-color: #F5F5F5;
+}
+
+.seccion-1 h1 {
+    font-weight: 700;
+    font-size: 52px;
+    color: #464646;
+    margin-top: 60px;
+}
+
+.seccion-1 p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #464646;
+}
+
+.links-container a {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #464646;
+}
+
+.perfil-container img {
+    width: 100%;
+    max-width: 370px;
+    border-radius: 50%;
+}
+
+.seccion2-container {
+    display: flex;
+    background-color: #EAF2FD;
+    padding: 80px 10%;
+}
+
+.seccion-sobremi h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+}
+
+.seccion-sobremi p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #464646;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .enlaces-container {
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #f5f5f5;
+        padding: 10px;
+        border-radius: 8px;
+        display: none;
+    }
+    .enlaces-container a {
+        font-size: 14px;
+    }
+    .mi-logo {
+        margin-left: 10px;
+    }
+    .seccion1-container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .seccion-1 h1 {
+        font-size: 42px;
+    }
+    .seccion-1 p {
+        font-size: 20px;
+    }
+    .perfil-container img {
+        width: 80%;
+        max-width: 268px;
+    }
+    .seccion2-container {
+        padding: 40px 5%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .enlaces-container {
+        width: 100%;
+        right: 0;
+        text-align: center;
+    }
+    .seccion1-container {
+        padding: 20px 5%;
+    }
+    .seccion-1 h1 {
+        font-size: 32px;
+    }
+    .seccion-1 p {
+        font-size: 18px;
+    }
+    .seccion2-container {
+        padding: 20px 5%;
+    }
+}
